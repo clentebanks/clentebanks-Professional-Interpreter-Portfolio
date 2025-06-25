@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Interpreter CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Language Toggle -->
+    <div class="fixed top-4 right-4 z-50 flex items-center gap-2">
+        <span class="text-sm font-medium">EN</span>
+        <div class="language-toggle" id="languageToggle">
+            <div class="toggle-btn"></div>
+        </div>
+        <span class="text-sm font-medium">ES</span>
+    </div>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-btn" id="contactBtn">
+        <i class="fas fa-envelope text-xl"></i>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 fade-in">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold">Contact Me</h3>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                    <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                    <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Profile" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2 fade-in" id="nameTitle">María Rodríguez</h1>
+                    <h2 class="text-xl md:text-2xl font-medium mb-4 fade-in delay-1" id="jobTitle">Spanish-English Over-the-Phone Interpreter</h2>
+                    <p class="max-w-lg fade-in delay-2" id="headerText">Certified interpreter with 3+ years of experience providing accurate and culturally sensitive interpretation services for healthcare, legal, and business communications.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- About -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-user text-blue-500"></i>
+                        <span id="aboutTitle">About Me</span>
+                    </h2>
+                    <p class="text-gray-700 mb-4" id="aboutText1">
+                        Professional Spanish-English interpreter with extensive experience in over-the-phone interpretation. Specialized in medical, legal, and business interpretation with a strong commitment to accuracy, confidentiality, and cultural sensitivity.
+                    </p>
+                    <p class="text-gray-700" id="aboutText2">
+                        Fluent in both Spanish and English with native-level proficiency. Adept at handling complex terminology and maintaining neutrality in emotionally charged situations. Committed to facilitating clear communication between parties while adhering to professional ethics and standards.
+                    </p>
+                </section>
+
+                <!-- Experience -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in delay-1">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-briefcase text-blue-500"></i>
+                        <span id="experienceTitle">Professional Experience</span>
+                    </h2>
+                    
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold" id="job1Title">Over-the-Phone Interpreter</h3>
+                        <div class="text-blue-500 mb-2" id="job1Company">LanguageLine Solutions | 2020 - Present</div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700" id="job1Desc">
+                            <li>Provide accurate interpretation between Spanish and English for diverse clients including healthcare providers, legal professionals, and business entities</li>
+                            <li>Handle an average of 25-30 calls per day with a 98% client satisfaction rate</li>
+                            <li>Specialize in medical interpretation including patient consultations, diagnoses, and treatment plans</li>
+                            <li>Maintain strict confidentiality and adhere to HIPAA compliance standards</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold" id="job2Title">Freelance Interpreter</h3>
+                        <div class="text-blue-500 mb-2" id="job2Company">Self-Employed | 2018 - 2020</div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700" id="job2Desc">
+                            <li>Provided in-person and remote interpretation services for local businesses and community organizations</li>
+                            <li>Assisted with document translation including contracts, medical records, and legal documents</li>
+                            <li>Developed specialized terminology glossaries for various industries</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in delay-2">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-blue-500"></i>
+                        <span id="educationTitle">Education & Certification</span>
+                    </h2>
+                    
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold" id="cert1Title">Certified Healthcare Interpreter (CHI™)</h3>
+                        <div class="text-blue-500 mb-2" id="cert1Org">Certification Commission for Healthcare Interpreters | 2019</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h3 class="text-xl font-semibold" id="degreeTitle">Bachelor's in Translation and Interpretation</h3>
+                        <div class="text-blue-500 mb-2" id="degreeUni">University of Madrid | 2017</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Contact Info -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-address-card text-blue-500"></i>
+                        <span id="contactTitle">Contact Information</span>
+                    </h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-blue-500"></i>
+                            <span id="phone">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-blue-500"></i>
+                            <span id="emailContact">maria.interpret@example.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            <span id="location">Miami, FL (Remote)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-linkedin text-blue-500"></i>
+                            <a href="#" class="text-blue-500 hover:underline" id="linkedin">linkedin.com/in/mariainterpreter</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Skills -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in delay-1">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-star text-blue-500"></i>
+                        <span id="skillsTitle">Skills & Expertise</span>
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span id="skill1">Spanish-English Interpretation</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span id="skill2">Medical Terminology</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span id="skill3">Legal Terminology</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span id="skill4">Cultural Mediation</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span id="skill5">Simultaneous Interpretation</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in delay-2">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-language text-blue-500"></i>
+                        <span id="languagesTitle">Languages</span>
+                    </h2>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Spanish</span>
+                                <span>Native</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>English</span>
+                                <span>Fluent</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Availability -->
+                <section class="bg-white rounded-lg shadow-md p-6 fade-in delay-3">
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-calendar-alt text-blue-500"></i>
+                        <span id="availabilityTitle">Availability</span>
+                    </h2>
+                    <p class="text-gray-700" id="availabilityText">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Available for full-time remote interpretation assignments
+                    </p>
+                    <p class="text-gray-700 mt-2" id="availabilityText2">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Flexible schedule including evenings and weekends
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p id="footerText">© 2025 **Clent Ebanks – Templario**. Basado en DeepSite por enzostvs.</p>
+            <div class="flex justify-center gap-4 mt-4">
+                <a href="#" class="text-white hover:text-blue-300"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-blue-300"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        const languageToggle = document.getElementById('languageToggle');
+        const toggleBtn = document.querySelector('.toggle-btn');
+        let currentLanguage = 'en';
+        
+        // English content
+        const englishContent = {
+            nameTitle: "María Rodríguez",
+            jobTitle: "Spanish-English Over-the-Phone Interpreter",
+            headerText: "Certified interpreter with 3+ years of experience providing accurate and culturally sensitive interpretation services for healthcare, legal, and business communications.",
+            aboutTitle: "About Me",
+            aboutText1: "Professional Spanish-English interpreter with extensive experience in over-the-phone interpretation. Specialized in medical, legal, and business interpretation with a strong commitment to accuracy, confidentiality, and cultural sensitivity.",
+            aboutText2: "Fluent in both Spanish and English with native-level proficiency. Adept at handling complex terminology and maintaining neutrality in emotionally charged situations. Committed to facilitating clear communication between parties while adhering to professional ethics and standards.",
+            experienceTitle: "Professional Experience",
+            job1Title: "Over-the-Phone Interpreter",
+            job1Company: "LanguageLine Solutions | 2020 - Present",
+            job1Desc: [
+                "Provide accurate interpretation between Spanish and English for diverse clients including healthcare providers, legal professionals, and business entities",
+                "Handle an average of 25-30 calls per day with a 98% client satisfaction rate",
+                "Specialize in medical interpretation including patient consultations, diagnoses, and treatment plans",
+                "Maintain strict confidentiality and adhere to HIPAA compliance standards"
+            ],
+            job2Title: "Freelance Interpreter",
+            job2Company: "Self-Employed | 2018 - 2020",
+            job2Desc: [
+                "Provided in-person and remote interpretation services for local businesses and community organizations",
+                "Assisted with document translation including contracts, medical records, and legal documents",
+                "Developed specialized terminology glossaries for various industries"
+            ],
+            educationTitle: "Education & Certification",
+            cert1Title: "Certified Healthcare Interpreter (CHI™)",
+            cert1Org: "Certification Commission for Healthcare Interpreters | 2019",
+            degreeTitle: "Bachelor's in Translation and Interpretation",
+            degreeUni: "University of Madrid | 2017",
+            contactTitle: "Contact Information",
+            phone: "+1 (555) 123-4567",
+            emailContact: "maria.interpret@example.com",
+            location: "Miami, FL (Remote)",
+            linkedin: "linkedin.com/in/mariainterpreter",
+            skillsTitle: "Skills & Expertise",
+            skill1: "Spanish-English Interpretation",
+            skill2: "Medical Terminology",
+            skill3: "Legal Terminology",
+            skill4: "Cultural Mediation",
+            skill5: "Simultaneous Interpretation",
+            languagesTitle: "Languages",
+            availabilityTitle: "Availability",
+            availabilityText: "Available for full-time remote interpretation assignments",
+            availabilityText2: "Flexible schedule including evenings and weekends",
+            footerText: "© 2023 María Rodríguez - Professional Spanish-English Interpreter"
+        };
+        
+        // Spanish content
+        const spanishContent = {
+            nameTitle: "María Rodríguez",
+            jobTitle: "Intérprete Telefónico Español-Inglés",
+            headerText: "Intérprete certificada con más de 3 años de experiencia brindando servicios de interpretación precisos y culturalmente sensibles para comunicaciones en el ámbito de la salud, legal y empresarial.",
+            aboutTitle: "Sobre Mí",
+            aboutText1: "Intérprete profesional español-inglés con amplia experiencia en interpretación telefónica. Especializada en interpretación médica, legal y empresarial con un fuerte compromiso con la precisión, confidencialidad y sensibilidad cultural.",
+            aboutText2: "Fluida en español e inglés con un nivel de competencia nativa. Hábil en el manejo de terminología compleja y en mantener la neutralidad en situaciones emocionalmente cargadas. Comprometida a facilitar una comunicación clara entre las partes mientras se adhiere a la ética y estándares profesionales.",
+            experienceTitle: "Experiencia Profesional",
+            job1Title: "Intérprete Telefónico",
+            job1Company: "LanguageLine Solutions | 2020 - Presente",
+            job1Desc: [
+                "Brindar interpretación precisa entre español e inglés para diversos clientes, incluyendo proveedores de salud, profesionales legales y entidades comerciales",
+                "Manejar un promedio de 25-30 llamadas por día con un 98% de satisfacción del cliente",
+                "Especializada en interpretación médica incluyendo consultas con pacientes, diagnósticos y planes de tratamiento",
+                "Mantener estricta confidencialidad y cumplir con los estándares HIPAA"
+            ],
+            job2Title: "Intérprete Independiente",
+            job2Company: "Autónoma | 2018 - 2020",
+            job2Desc: [
+                "Brindé servicios de interpretación presencial y remota para empresas locales y organizaciones comunitarias",
+                "Asistí con traducción de documentos incluyendo contratos, registros médicos y documentos legales",
+                "Desarrollé glosarios de terminología especializada para diversas industrias"
+            ],
+            educationTitle: "Educación y Certificaciones",
+            cert1Title: "Intérprete de Salud Certificado (CHI™)",
+            cert1Org: "Certification Commission for Healthcare Interpreters | 2019",
+            degreeTitle: "Licenciatura en Traducción e Interpretación",
+            degreeUni: "Universidad de Madrid | 2017",
+            contactTitle: "Información de Contacto",
+            phone: "+1 (555) 123-4567",
+            emailContact: "maria.interpret@example.com",
+            location: "Miami, FL (Remoto)",
+            linkedin: "linkedin.com/in/mariainterpreter",
+            skillsTitle: "Habilidades y Experiencia",
+            skill1: "Interpretación Español-Inglés",
+            skill2: "Terminología Médica",
+            skill3: "Terminología Legal",
+            skill4: "Mediación Cultural",
+            skill5: "Interpretación Simultánea",
+            languagesTitle: "Idiomas",
+            availabilityTitle: "Disponibilidad",
+            availabilityText: "Disponible para asignaciones de interpretación remota a tiempo completo",
+            availabilityText2: "Horario flexible incluyendo tardes y fines de semana",
+            footerText: "© 2023 María Rodríguez - Intérprete Profesional Español-Inglés"
+        };
+        
+        // Update content based on language
+        function updateContent(language) {
+            const content = language === 'en' ? englishContent : spanishContent;
+            
+            document.getElementById('nameTitle').textContent = content.nameTitle;
+            document.getElementById('jobTitle').textContent = content.jobTitle;
+            document.getElementById('headerText').textContent = content.headerText;
+            document.getElementById('aboutTitle').textContent = content.aboutTitle;
+            document.getElementById('aboutText1').textContent = content.aboutText1;
+            document.getElementById('aboutText2').textContent = content.aboutText2;
+            document.getElementById('experienceTitle').textContent = content.experienceTitle;
+            document.getElementById('job1Title').textContent = content.job1Title;
+            document.getElementById('job1Company').textContent = content.job1Company;
+            document.getElementById('job2Title').textContent = content.job2Title;
+            document.getElementById('job2Company').textContent = content.job2Company;
+            document.getElementById('educationTitle').textContent = content.educationTitle;
+            document.getElementById('cert1Title').textContent = content.cert1Title;
+            document.getElementById('cert1Org').textContent = content.cert1Org;
+            document.getElementById('degreeTitle').textContent = content.degreeTitle;
+            document.getElementById('degreeUni').textContent = content.degreeUni;
+            document.getElementById('contactTitle').textContent = content.contactTitle;
+            document.getElementById('phone').textContent = content.phone;
+            document.getElementById('emailContact').textContent = content.emailContact;
+            document.getElementById('location').textContent = content.location;
+            document.getElementById('linkedin').textContent = content.linkedin;
+            document.getElementById('skillsTitle').textContent = content.skillsTitle;
+            document.getElementById('skill1').textContent = content.skill1;
+            document.getElementById('skill2').textContent = content.skill2;
+            document.getElementById('skill3').textContent = content.skill3;
+            document.getElementById('skill4').textContent = content.skill4;
+            document.getElementById('skill5').textContent = content.skill5;
+            document.getElementById('languagesTitle').textContent = content.languagesTitle;
+            document.getElementById('availabilityTitle').textContent = content.availabilityTitle;
+            document.getElementById('availabilityText').innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${content.availabilityText}`;
+            document.getElementById('availabilityText2').innerHTML = `<i class="fas fa-check text-green-500 mr-2"></i>${content.availabilityText2}`;
+            document.getElementById('footerText').textContent = content.footerText;
+            
+            // Update job descriptions
+            const job1ListItems = document.querySelectorAll('#job1Desc li');
+            content.job1Desc.forEach((item, index) => {
+                if (job1ListItems[index]) {
+                    job1ListItems[index].textContent = item;
+                }
+            });
+            
+            const job2ListItems = document.querySelectorAll('#job2Desc li');
+            content.job2Desc.forEach((item, index) => {
+                if (job2ListItems[index]) {
+                    job2ListItems[index].textContent = item;
+                }
+            });
+        }
+        
+        languageToggle.addEventListener('click', () => {
+            languageToggle.classList.toggle('active');
+            toggleBtn.classList.toggle('active');
+            
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            updateContent(currentLanguage);
+        });
+        
+        // Contact Modal Functionality
+        const contactBtn = document.getElementById('contactBtn');
+        const contactModal = document.getElementById('contactModal');
+        const closeModal = document.getElementById('closeModal');
+        const contactForm = document.getElementById('contactForm');
+        
+        contactBtn.addEventListener('click', () => {
+            contactModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            contactModal.classList.add('hidden');
+        });
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert(currentLanguage === 'en' ? 'Thank you for your message! I will get back to you soon.' : '¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
+            contactModal.classList.add('hidden');
+            contactForm.reset();
+        });
+        
+        // Close modal when clicking outside
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.classList.add('hidden');
+            }
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in, .delay-1, .delay-2, .delay-3, .delay-4');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        document.addEventListener('DOMContentLoaded', animateOnScroll);
+    </script>
+
+</body>
+</html>

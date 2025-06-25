@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Interpreter Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    <a href="#" class="flex items-center">
+                        <i class="fas fa-language mr-2"></i>
+                        <span>LinguaBridge</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="#languages" class="nav-link text-gray-700 hover:text-blue-600">Languages</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                    <button id="language-toggle" class="ml-4 px-3 py-1 border border-blue-600 rounded-full text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors">
+                        EN/ES
+                    </button>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#languages" class="block py-2 text-gray-700 hover:text-blue-600">Languages</a>
+                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-600">Testimonials</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+                <button id="mobile-language-toggle" class="mt-2 px-3 py-1 border border-blue-600 rounded-full text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors">
+                    EN/ES
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Interpreter Services</h1>
+                <p class="text-xl mb-8">Bridging communication gaps with precision, cultural sensitivity, and professional expertise.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button id="downloadCv" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300 flex items-center justify-center">
+                        <a href="#"><i class="fas fa-download mr-2"></i> Download CV</a>
+                        
+                    </button>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 text-center">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center fade-in delay-1">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 bg-white rounded-full overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" 
+                         alt="Professional Interpreter" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-600 opacity-20 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800 fade-in">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center fade-in">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" 
+                             alt="Professional Photo" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12 fade-in delay-1">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Sarah Johnson</h3>
+                    <p class="text-gray-600 mb-6">Certified Professional Interpreter with over 10 years of experience in conference, medical, and legal interpretation.</p>
+                    <p class="text-gray-600 mb-6">I hold a Master's degree in Translation and Interpretation from the University of London and am certified by the International Association of Conference Interpreters (AIIC). My approach combines linguistic precision with cultural sensitivity to ensure accurate and meaningful communication.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-blue-500 mr-3 text-xl"></i>
+                            <span class="text-gray-700">AIIC Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe text-blue-500 mr-3 text-xl"></i>
+                            <span class="text-gray-700">5+ Languages</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-briefcase text-blue-500 mr-3 text-xl"></i>
+                            <span class="text-gray-700">10+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-blue-500 mr-3 text-xl"></i>
+                            <span class="text-gray-700">500+ Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800 fade-in">My Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-gavel text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-en="Legal Interpretation" data-es="Interpretación Legal">Legal Interpretation</h3>
+                    <p class="text-gray-600 mb-4" data-en="Precise interpretation for court proceedings, depositions, and legal consultations with strict confidentiality." 
+                       data-es="Interpretación precisa para procedimientos judiciales, declaraciones y consultas legales con estricta confidencialidad.">
+                        Precise interpretation for court proceedings, depositions, and legal consultations with strict confidentiality.
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span data-en="Courtroom interpretation" data-es="Interpretación en sala">Courtroom interpretation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span data-en="Deposition services" data-es="Servicios de declaración">Deposition services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span data-en="Legal document translation" data-es="Traducción de documentos legales">Legal document translation</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in delay-1">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-medkit text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Medical Interpretation</h3>
+                    <p class="text-gray-600 mb-4">Accurate and compassionate interpretation for healthcare settings, ensuring clear patient-provider communication.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Hospital interpretation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Medical consultations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Mental health sessions</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in delay-2">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-microphone text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Conference Interpretation</h3>
+                    <p class="text-gray-600 mb-4">Simultaneous and consecutive interpretation for international conferences, meetings, and events.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Simultaneous interpretation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Consecutive interpretation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Whispered interpretation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800 fade-in">Languages</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+                <!-- Language 1 -->
+                <div class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition duration-300 fade-in language-icon">
+                    <div class="w-16 h-16 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">English</h3>
+                    <p class="text-gray-600">Native</p>
+                </div>
+                
+                <!-- Language 2 -->
+                <div class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition duration-300 fade-in delay-1 language-icon">
+                    <div class="w-16 h-16 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="French" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">French</h3>
+                    <p class="text-gray-600">Fluent</p>
+                </div>
+                
+                <!-- Language 3 -->
+                <div class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition duration-300 fade-in delay-2 language-icon">
+                    <div class="w-16 h-16 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197571.png" alt="Spanish" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Spanish</h3>
+                    <p class="text-gray-600">Fluent</p>
+                </div>
+                
+                <!-- Language 4 -->
+                <div class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition duration-300 fade-in delay-3 language-icon">
+                    <div class="w-16 h-16 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197604.png" alt="German" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">German</h3>
+                    <p class="text-gray-600">Professional</p>
+                </div>
+                
+                <!-- Language 5 -->
+                <div class="flex flex-col items-center p-6 rounded-lg hover:bg-gray-50 transition duration-300 fade-in delay-4 language-icon">
+                    <div class="w-16 h-16 mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197375.png" alt="Mandarin" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Mandarin</h3>
+                    <p class="text-gray-600">Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16 text-gray-800 fade-in"
+        data-en="Client Testimonials" 
+        data-es="Testimonios de Clientes">
+      Client Testimonials
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-md testimonial-card fade-in">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">James Wilson</h4>
+            <p class="text-sm text-gray-600" 
+               data-en="Legal Director, Wilson & Associates" 
+               data-es="Director Legal, Wilson & Associates">
+              Legal Director, Wilson & Associates
+            </p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic"
+           data-en="Sarah's interpretation during our international arbitration was impeccable. Her legal terminology knowledge and quick thinking were invaluable to our case." 
+           data-es="La interpretación de Sarah durante nuestro arbitraje internacional fue impecable. Su conocimiento del lenguaje jurídico y su rapidez mental fueron invaluables para nuestro caso.">
+          "Sarah's interpretation during our international arbitration was impeccable. Her legal terminology knowledge and quick thinking were invaluable to our case."
+        </p>
+        <div class="mt-4 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-md testimonial-card fade-in delay-1">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Dr. Maria Rodriguez</h4>
+            <p class="text-sm text-gray-600" 
+               data-en="Chief Physician, City Hospital" 
+               data-es="Jefa Médica, Hospital de la Ciudad">
+              Chief Physician, City Hospital
+            </p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic"
+           data-en="We regularly work with Sarah for patient consultations. Her medical knowledge and cultural sensitivity make her our go-to interpreter for complex cases." 
+           data-es="Trabajamos regularmente con Sarah en consultas con pacientes. Su conocimiento médico y sensibilidad cultural la convierten en nuestra intérprete de confianza para casos complejos.">
+          "We regularly work with Sarah for patient consultations. Her medical knowledge and cultural sensitivity make her our go-to interpreter for complex cases."
+        </p>
+        <div class="mt-4 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-lg shadow-md testimonial-card fade-in delay-2">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">Thomas Chen</h4>
+            <p class="text-sm text-gray-600"
+               data-en="Event Coordinator, Global Summit" 
+               data-es="Coordinador de Eventos, Cumbre Global">
+              Event Coordinator, Global Summit
+            </p>
+          </div>
+        </div>
+        <p class="text-gray-600 italic"
+           data-en="Sarah handled our multilingual conference with exceptional skill. Her simultaneous interpretation was flawless, and our international delegates were very impressed." 
+           data-es="Sarah manejó nuestra conferencia multilingüe con habilidad excepcional. Su interpretación simultánea fue impecable y nuestros delegados internacionales quedaron muy impresionados.">
+          "Sarah handled our multilingual conference with exceptional skill. Her simultaneous interpretation was flawless, and our international delegates were very impressed."
+        </p>
+        <div class="mt-4 text-yellow-400">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16 text-gray-800 fade-in" data-en="Get In Touch" data-es="Contacto">Get In Touch</h2>
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 fade-in">
+        <h3 class="text-2xl font-semibold mb-6 text-gray-800" data-en="Contact Information" data-es="Información de Contacto">Contact Information</h3>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-4 text-xl"></i>
+            <div>
+              <h4 class="font-semibold text-gray-800" data-en="Location" data-es="Ubicación">Location</h4>
+              <p class="text-gray-600">123 Interpreter Lane, London, UK</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-envelope text-blue-500 mt-1 mr-4 text-xl"></i>
+            <div>
+              <h4 class="font-semibold text-gray-800" data-en="Email" data-es="Correo Electrónico">Email</h4>
+              <p class="text-gray-600">sarah@linguabridge.com</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-phone-alt text-blue-500 mt-1 mr-4 text-xl"></i>
+            <div>
+              <h4 class="font-semibold text-gray-800" data-en="Phone" data-es="Teléfono">Phone</h4>
+              <p class="text-gray-600">+44 20 1234 5678</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <i class="fas fa-clock text-blue-500 mt-1 mr-4 text-xl"></i>
+            <div>
+              <h4 class="font-semibold text-gray-800" data-en="Working Hours" data-es="Horario Laboral">Working Hours</h4>
+              <p class="text-gray-600" data-en="Monday - Friday: 9am - 6pm" data-es="Lunes a Viernes: 9am - 6pm">Monday - Friday: 9am - 6pm</p>
+              <p class="text-gray-600" data-en="Emergency services available" data-es="Servicios de emergencia disponibles">Emergency services available</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <h4 class="font-semibold text-gray-800 mb-4" data-en="Follow Me" data-es="Sígueme">Follow Me</h4>
+          <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-400 text-white flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 text-white flex items-center justify-center hover:bg-gray-800 transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-pink-600 text-white flex items-center justify-center hover:bg-pink-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+        </div>
+      </div>
+      <div class="md:w-1/2 fade-in delay-1">
+        <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <div class="mb-6">
+            <label for="name" class="block text-gray-700 font-medium mb-2" data-en="Your Name" data-es="Tu Nombre">Your Name</label>
+            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-placeholder-en="Your Name" data-placeholder-es="Tu Nombre">
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block text-gray-700 font-medium mb-2" data-en="Email Address" data-es="Correo Electrónico">Email Address</label>
+            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-placeholder-en="Email Address" data-placeholder-es="Correo Electrónico">
+          </div>
+          <div class="mb-6">
+            <label for="service" class="block text-gray-700 font-medium mb-2" data-en="Service Needed" data-es="Servicio Necesitado">Service Needed</label>
+            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option value="" data-en="Select a service" data-es="Selecciona un servicio">Select a service</option>
+              <option value="legal" data-en="Legal Interpretation" data-es="Interpretación Legal">Legal Interpretation</option>
+              <option value="medical" data-en="Medical Interpretation" data-es="Interpretación Médica">Medical Interpretation</option>
+              <option value="conference" data-en="Conference Interpretation" data-es="Interpretación de Conferencias">Conference Interpretation</option>
+              <option value="other" data-en="Other" data-es="Otro">Other</option>
+            </select>
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2" data-en="Your Message" data-es="Tu Mensaje">Your Message</label>
+            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-placeholder-en="Your Message" data-placeholder-es="Tu Mensaje"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300" data-en="Send Message" data-es="Enviar Mensaje">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="mb-8 md:mb-0">
+        <h3 class="text-2xl font-bold mb-4 flex items-center">
+          <i class="fas fa-language mr-2"></i>
+          <span>LinguaBridge</span>
+        </h3>
+        <p class="text-gray-400 max-w-md" data-en="Professional interpretation services bridging communication gaps with precision and cultural sensitivity." data-es="Servicios profesionales de interpretación que cierran brechas de comunicación con precisión y sensibilidad cultural.">
+          Professional interpretation services bridging communication gaps with precision and cultural sensitivity.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-lg font-semibold mb-4" data-en="Quick Links" data-es="Enlaces Rápidos">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300" data-en="Home" data-es="Inicio">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300" data-en="About" data-es="Sobre Mí">About</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300" data-en="Services" data-es="Servicios">Services</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300" data-en="Contact" data-es="Contacto">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4" data-en="Services" data-es="Servicios">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Legal Interpretation" data-es="Interpretación Legal">Legal Interpretation</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Medical Interpretation" data-es="Interpretación Médica">Medical Interpretation</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Conference Interpretation" data-es="Interpretación de Conferencias">Conference Interpretation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4" data-en="Legal" data-es="Legal">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Terms of Service" data-es="Términos de Servicio">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300" data-en="Cookie Policy" data-es="Política de Cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 mb-4 md:mb-0">
+        © 2025 <strong>Clent Ebanks – Templario</strong>. Basado en DeepSite por enzostvs.
+      </p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/scripts.js" ></script>
+    <script>
+       // Translations object
+const translations = {
+    en: {
+        home: "Home",
+        about: "About",
+        services: "Services",
+        languages: "Languages",
+        testimonials: "Testimonials",
+        contact: "Contact",
+        heroTitle: "Professional Interpreter Services",
+        heroSubtitle: "Bridging communication gaps with precision, cultural sensitivity, and professional expertise.",
+        downloadCv: "Download CV",
+        contactMe: "Contact Me",
+        aboutTitle: "About Me",
+        aboutName: "Sarah Johnson",
+        aboutText1: "Certified Professional Interpreter with over 10 years of experience in conference, medical, and legal interpretation.",
+        aboutText2: "I hold a Master's degree in Translation and Interpretation from the University of London and am certified by the International Association of Conference Interpreters (AIIC). My approach combines linguistic precision with cultural sensitivity to ensure accurate and meaningful communication.",
+        servicesTitle: "My Services",
+        testimonialsTitle: "Client Testimonials",
+        languagesTitle: "Languages",
+        contactTitle: "Get In Touch",
+        contactSubtitle: "Contact Information",
+        footerText: "Professional interpretation services bridging communication gaps with precision and cultural sensitivity."
+    },
+    es: {
+        home: "Inicio",
+        about: "Sobre Mí",
+        services: "Servicios",
+        languages: "Idiomas",
+        testimonials: "Testimonios",
+        contact: "Contacto",
+        heroTitle: "Servicios Profesionales de Interpretación",
+        heroSubtitle: "Cerrando brechas de comunicación con precisión, sensibilidad cultural y experiencia profesional.",
+        downloadCv: "Descargar CV",
+        contactMe: "Contáctame",
+        aboutTitle: "Sobre Mí",
+        aboutName: "Sarah Johnson",
+        aboutText1: "Intérprete profesional certificada con más de 10 años de experiencia en interpretación de conferencias, médica y legal.",
+        aboutText2: "Tengo una Maestría en Traducción e Interpretación de la Universidad de Londres y estoy certificada por la Asociación Internacional de Intérpretes de Conferencias (AIIC). Mi enfoque combina precisión lingüística con sensibilidad cultural para garantizar una comunicación precisa y significativa.",
+        servicesTitle: "Mis Servicios",
+        testimonialsTitle: "Testimonios de Clientes",
+        languagesTitle: "Idiomas",
+        contactTitle: "Contacto",
+        contactSubtitle: "Información de Contacto",
+        footerText: "Servicios profesionales de interpretación que cierran brechas de comunicación con precisión y sensibilidad cultural."
+    }
+};
+
+let currentLang = 'en';
+
+document.getElementById('language-toggle').addEventListener('click', toggleLanguage);
+document.getElementById('mobile-language-toggle').addEventListener('click', toggleLanguage);
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'es' : 'en';
+    updateContent();
+}
+
+function updateContent() {
+    const lang = translations[currentLang];
+
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLang;
+
+    // Update navigation links
+    document.querySelectorAll('.nav-link').forEach((el, index) => {
+        const keys = ['home', 'about', 'services', 'languages', 'testimonials', 'contact'];
+        if (index < keys.length) {
+            el.textContent = lang[keys[index]];
+        }
+    });
+
+    // Update mobile menu links
+    document.querySelectorAll('#mobile-menu a').forEach((el, index) => {
+        const keys = ['home', 'about', 'services', 'languages', 'testimonials', 'contact'];
+        if (index < keys.length) {
+            el.textContent = lang[keys[index]];
+        }
+    });
+
+    // Update hero section
+    document.querySelector('#home h1').textContent = lang.heroTitle;
+    document.querySelector('#home p').textContent = lang.heroSubtitle;
+    document.querySelector('#downloadCv a').innerHTML = `<i class="fas fa-download mr-2"></i> ${lang.downloadCv}`;
+    document.querySelector('#home a[href="#contact"]').textContent = lang.contactMe;
+
+    // Update about section
+    document.querySelector('#about h2').textContent = lang.aboutTitle;
+    document.querySelector('#about h3').textContent = lang.aboutName;
+    document.querySelectorAll('#about p')[0].textContent = lang.aboutText1;
+    document.querySelectorAll('#about p')[1].textContent = lang.aboutText2;
+
+    // Update services section
+    document.querySelector('#services h2').textContent = lang.servicesTitle;
+
+    // Update languages section
+    document.querySelector('#languages h2').textContent = lang.languagesTitle;
+
+    // Update testimonials section
+    document.querySelector('#testimonials h2').textContent = lang.testimonialsTitle;
+
+    // Update contact section
+    document.querySelector('#contact h2').textContent = lang.contactTitle;
+    document.querySelector('#contact h3').textContent = lang.contactSubtitle;
+
+    // Update elements with data-en / data-es
+    document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+        el.placeholder = el.getAttribute(`data-placeholder-${currentLang}`);
+    });
+
+    // Update aria-labels
+    document.querySelectorAll('[data-aria-en]').forEach(el => {
+        el.setAttribute('aria-label', el.getAttribute(`data-aria-${currentLang}`));
+    });
+
+    // Update alt attributes
+    document.querySelectorAll('[data-alt-en]').forEach(el => {
+        el.alt = el.getAttribute(`data-alt-${currentLang}`);
+    });
+
+    // Update footer text
+    const footerParagraph = document.querySelector('footer p[data-en]');
+    if (footerParagraph) {
+        footerParagraph.textContent = lang.footerText;
+    }
+}
+
+    </script>
+</body>
+</html>
