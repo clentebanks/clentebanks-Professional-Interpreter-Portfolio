@@ -32,7 +32,7 @@
             // In a real scenario, this would link to an actual PDF file
             // For demo purposes, we'll simulate a download
             const link = document.createElement('a');
-            link.href = '/Professional_CallCenter_Resume.docx'; // Replace with actual CV URL
+            link.href = '#'; // Replace with actual CV URL
             link.download = 'Professional_CallCenter_Resume.docx';
             document.body.appendChild(link);
             link.click();
